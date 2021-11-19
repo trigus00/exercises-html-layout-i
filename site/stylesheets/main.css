@@ -1,4 +1,42 @@
 .container {
   margin: 0 auto 0 auto;
   max-width: 720px;
+  display: grid;
+  grid-template-columns: 1fr 3fr; 
+
+}
+
+ h1, h2, h3, h4, h5, h6 {
+  font-family:fantasy;
+  font-style: italic;
+}
+
+#page-header {
+  grid-column: 1 / -1;
+  border-bottom: 1px solid #999;
+  display: grid;
+  font-family: fantasy;
+  grid-template-columns: 1fr 3fr;
+}
+#page-footer {
+  grid-column: 2/2;
+}
+#page-header .site-title {
+  font-size: 36px;
+  text-decoration:none ;
+  color: black;
+  float:right;
+  font-weight:normal;
+  font-family: fantasy;
+  line-height: 200%;
+}
+#site-title ul a{
+  display: flex;
+  text-decoration:none ;
+
+}
+#page-header nav li {
+  float:left ;
+  text-decoration:  none;
+  padding: 30px
 }
